@@ -1,0 +1,14 @@
+{
+  "name": "backend-php",
+  "root": "backend/php",
+  "sourceRoot": "backend/php",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd backend/php && php -S 0.0.0.0:8080 -t public"
+      }
+    }
+  }
+}

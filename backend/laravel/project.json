@@ -1,0 +1,14 @@
+{
+  "name": "backend-laravel",
+  "root": "backend/laravel",
+  "sourceRoot": "backend/laravel",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd backend/laravel && php artisan serve --host=0.0.0.0 --port=8000"
+      }
+    }
+  }
+}

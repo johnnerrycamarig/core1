@@ -1,0 +1,14 @@
+{
+  "name": "mobile",
+  "root": "mobile",
+  "sourceRoot": "mobile",
+  "projectType": "application",
+  "targets": {
+    "start": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd mobile && npm start"
+      }
+    }
+  }
+}

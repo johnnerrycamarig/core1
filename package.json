@@ -1,0 +1,20 @@
+{
+  "name": "intellitrack-fullstack",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "mobile"
+  ],
+  "devDependencies": {
+    "@nrwl/cli": "^19.8.4",
+    "@nrwl/js": "^19.8.4",
+    "@nrwl/react": "^19.8.4",
+    "@nrwl/react-native": "^19.8.4",
+    "typescript": "^5.6.0"
+  },
+  "scripts": {
+    "nx": "nx",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:mobile": "cd mobile && npm start"
+  }
+}

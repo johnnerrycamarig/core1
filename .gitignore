@@ -1,0 +1,13 @@
+/node_modules
+/.pnp
+/.pnp.js
+/.vite
+/dist
+/coverage
+/vendor
+/.env
+/frontend/node_modules
+/mobile/node_modules
+/backend/laravel/vendor
+/backend/php/vendor
+.DS_Store

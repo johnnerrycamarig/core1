@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>IntelliTrack — Preview</title>
+    <style>
+      :root{--bg:#0f1724;--card:#ffffff;--muted:#64748b}
+      body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#f1f5f9; color:#0f1724;margin:0;padding:32px}
+      .container{max-width:1100px;margin:0 auto}
+      .top{display:flex;justify-content:space-between;align-items:center;background:var(--card);padding:24px;border-radius:16px;box-shadow:0 4px 14px rgba(2,6,23,.08)}
+      .title{font-size:20px;font-weight:600}
+      .subtitle{color:var(--muted);margin-top:6px}
+      .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+      .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 2px 8px rgba(2,6,23,.06);display:flex;gap:12px;align-items:center}
+      .icon{width:44px;height:44px;border-radius:8px;background:#0ea5a6;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+      .card .meta{font-size:13px;color:var(--muted)}
+      .card .value{font-size:22px;font-weight:700;margin-top:6px}
+      .two{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:20px}
+      .panel{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 2px 8px rgba(2,6,23,.06)}
+      .activity li{margin-bottom:12px}
+      .small{color:var(--muted);font-size:13px}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div>
+          <div class="title">Welcome back, Admin</div>
+          <div class="subtitle">Sales and job order management dashboard</div>
+        </div>
+        <div style="display:flex;gap:8px">
+          <button style="padding:8px 12px;border-radius:10px;border:1px solid #e6eef6;background:#fff">Create Job</button>
+          <button style="padding:8px 12px;border-radius:10px;background:#0ea5a6;color:#fff;border:0">New Client</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card"><div class="icon">C</div><div><div class="meta">Total Clients</div><div class="value">120</div></div></div>
+        <div class="card"><div class="icon" style="background:#10b981">J</div><div><div class="meta">Active Jobs</div><div class="value">35</div></div></div>
+        <div class="card"><div class="icon" style="background:#f59e0b">R</div><div><div class="meta">Rentals</div><div class="value">18</div></div></div>
+        <div class="card"><div class="icon" style="background:#ef4444">P</div><div><div class="meta">Projects</div><div class="value">12</div></div></div>
+      </div>
+
+      <div class="two">
+        <div class="panel">
+          <div style="display:flex;justify-content:space-between;align-items:center"><strong>Recent Activity</strong><span class="small">Today</span></div>
+          <ul class="activity" style="margin-top:12px;padding-left:16px">
+            <li><div><strong>#J-1023</strong> created for <em>Acme Corp</em></div><div class="small">10 minutes ago</div></li>
+            <li><div><strong>#J-1019</strong> marked <strong>completed</strong></div><div class="small">1 hour ago</div></li>
+            <li><div>New client <strong>Greenfield Ltd.</strong> added</div><div class="small">4 hours ago</div></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div><strong>Quick Stats</strong></div>
+          <div style="margin-top:12px" class="small">
+            <div style="display:flex;justify-content:space-between"><span>Open Invoices</span><strong>7</strong></div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px"><span>Overdue Payments</span><strong>2</strong></div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px"><span>Pending Approvals</span><strong>5</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

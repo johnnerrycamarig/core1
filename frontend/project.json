@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "root": "frontend",
+  "sourceRoot": "frontend/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "frontend/dist",
+        "configFile": "frontend/vite.config.ts"
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "configFile": "frontend/vite.config.ts"
+      }
+    }
+  }
+}
