@@ -1,4 +1,5 @@
-# IntelliTrack Fullstack Monorepo
+# IntelliTrack Fullstack 
+
 
 A fullstack starter project containing:
 - Frontend: React 19, React Router, TypeScript, Vite, Tailwind CSS 4
